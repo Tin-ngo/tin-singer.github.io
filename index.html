@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.css">
+    <title>Cute</title>
+</head>
+
+<body>
+    <!-- thẻ chứa -->
+    <div id="main">
+        <!-- Header -->
+        <header class="header"></header>
+
+        <!-- body -->
+        <div class="container">
+            <div class="text1">
+                <h1 class="text1">Bạn thấy ca sĩ Tin hát có hay không?</h1>
+            </div>
+            <button class="button_ok" onclick="ok()">Tin hát hay quá trời</button>
+            <button class="button" onmouseover="no_ok()" onclick="no_ok()">Hát dỡ, như chaien</button>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer"> </footer>
+    </div>
+
+    <div class="modal">
+        <div class="modal--overlay"></div>
+        <div class="modal_content">
+            <h2>Hãy bấm ghe đoạn nhạc này nhé!!</h2>
+            <audio id="au1" controls>
+                <source id="mySing" src="./assets/sound/sing.mp3" type="audio/ogg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="modal2">
+        <div class="modal2--overlay"></div>
+        <div class="modal2_content">
+            <h2>Biết ngay sẽ chọn vậy mà HaHaHaHaHa</h2>
+            in tư của ca sĩ đây, đừng chia sẻ cho ai nha
+            <a href="https://www.facebook.com/ngophitin/">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <button class="thoat" style="background-color: red; color: #fff; border:none; border-radius: 20px; margin-top: 20px; padding: 10px;" onclick="thoat()">thoát</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
